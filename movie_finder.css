@@ -1,0 +1,118 @@
+body{
+	box-sizing: border-box;
+	margin:0;
+	padding: 0;
+	font-size: 20px;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.title{
+	font-size: 30px;
+	font-weight: 600;
+	color: white;
+	background-color: red;
+	text-align: center;
+	width: 100%;
+	padding: 33px;
+}
+.image-content{
+	background-image: url("1154.jpg");
+	height: 400px;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+.search-box{
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin: 20px;
+}
+.form-input{
+	border: none;
+	outline: none;
+	background-color: white;
+	padding: 10px 20px;
+	border: 1px solid grey;
+	margin-right: 20px;
+	border-radius: 50px;
+}
+.form-input:focus{
+	background-color: whitesmoke;
+}
+.search{
+	border: none;
+	outline: none;
+	background-color: royalblue;
+	padding: 10px 20px;
+	color: white;
+	font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+	border-radius: 10px;
+}
+.movie-card{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+.card{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	color: white;
+	background-color: orange;
+	margin: 20px;
+	padding: 30px;
+	width: 700px;
+}
+.movie-title{
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	width: 300px;
+	margin: 0px 200px;
+}
+.value{
+	font-size: 15px;
+	width: 200px;
+}
+@media (min-width:320px) and (max-width:480px){
+	.title{
+		font-size: 30px;
+		font-weight: 600;
+		color: white;
+		background-color: red;
+		text-align: center;
+		width: 340px;
+		padding: 33px;
+	}
+	.card{
+		display: block;
+		width: 100%;
+		padding:10px;
+		height: 430px;
+		justify-content: space-between;
+		align-items: center;
+		color: white;
+		background-color: orange;
+		text-align: center;
+		margin-left: 0px;
+	}
+	.movie-card{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		flex-direction: column;
+		text-align: center;
+		margin-left: 0px;
+	}
+	.movie-title{
+		display: block;
+		justify-content: center;
+		align-items: center;
+		text-align: center;
+		width: 300px;
+		margin: 0px 50px;
+	}
+	.image-content{
+		height: 600px;
+	}
+}
